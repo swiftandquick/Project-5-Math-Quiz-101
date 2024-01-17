@@ -126,7 +126,8 @@ function checkAnswer() {
     answeredQuestion();
     quiz.innerHTML +=
       "<button id='submitAnswer' onclick='checkAnswer()'>Submit</button>";
-    quiz.innerHTML += "<button onclick='nextQuestion()'>Next</button>";
+    quiz.innerHTML +=
+      "<button style='margin-left:5px;' onclick='nextQuestion()'>Next</button>";
     const btn = get("submitAnswer");
     btn.disabled = true;
   } else if (selectedChoice === "") {
@@ -144,7 +145,8 @@ function checkAnswer() {
     answeredQuestion();
     quiz.innerHTML +=
       "<button id='submitAnswer' onclick='checkAnswer()'>Submit</button>";
-    quiz.innerHTML += "<button onclick='nextQuestion()'>Next</button>";
+    quiz.innerHTML +=
+      "<button style='margin-left:5px;' style='margin-left:5px;' onclick='nextQuestion()'>Next</button>";
     const btn = get("submitAnswer");
     btn.disabled = true;
   }
@@ -174,7 +176,8 @@ function unansweredQuestion() {
     "<br></br><br></br>";
   quiz.innerHTML +=
     "<button id='submitAnswer' onclick='checkAnswer()'>Submit</button>";
-  quiz.innerHTML += "<button onclick='nextQuestion()' disabled>Next</button>";
+  quiz.innerHTML +=
+    "<button style='margin-left:5px;' onclick='nextQuestion()' disabled>Next</button>";
 }
 
 function answeredQuestion() {
